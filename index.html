@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bali Serenity Spa — authentic Balinese spa treatments in Seminyak, Bali." />
+  <title>Bali Serenity Spa — Premium Spa Experience in Bali</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container">
+      <a class="brand" href="#home" aria-label="Bali Serenity Spa home">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="lotus"></i></span>
+        <span class="brand-text">
+          <strong>Bali Serenity</strong>
+          <small>SPA • BALI</small>
+        </span>
+      </a>
+
+      <div class="desktop-nav">
+        <a class="active" href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button class="btn btn-gold nav-book" data-open-booking>
+        <i data-lucide="calendar-days"></i>
+        Book Now
+      </button>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#services">Our Services</a>
+      <a href="#about">About Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn-gold" data-open-booking>
+        <i data-lucide="calendar-days"></i>
+        Book Now
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <p class="eyebrow eyebrow-light">RELAX • REJUVENATE • REBALANCE</p>
+          <h1>Premium Spa<br />in the Heart of Bali</h1>
+          <p class="hero-description">
+            Experience authentic Balinese spa treatments for ultimate relaxation and wellbeing.
+          </p>
+          <button class="btn btn-gold btn-large" data-open-booking>
+            Book Your Session
+            <i data-lucide="arrow-right"></i>
+          </button>
+          <div class="hero-meta">
+            <span><i data-lucide="map-pin"></i> Seminyak, Bali</span>
+            <span class="meta-divider"></span>
+            <span><i data-lucide="clock-3"></i> Open Daily · 09:00 – 22:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span></span>
+        Scroll
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">OUR SERVICES</p>
+          <h2>Signature Treatments</h2>
+          <p>Indulge in our carefully crafted spa treatments inspired by Balinese tradition.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=900&q=85" alt="Balinese massage treatment" />
+            </div>
+            <div class="service-body">
+              <h3>Balinese Massage</h3>
+              <p>Release tension and restore your energy with our traditional Balinese massage.</p>
+              <button class="text-link" data-service="Balinese Massage">Learn More <i data-lucide="arrow-right"></i></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=85" alt="Aromatherapy spa treatment" />
+            </div>
+            <div class="service-body">
+              <h3>Aromatherapy Massage</h3>
+              <p>A relaxing massage combined with natural essential oils for deeper calm.</p>
+              <button class="text-link" data-service="Aromatherapy Massage">Learn More <i data-lucide="arrow-right"></i></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85" alt="Facial treatment" />
+            </div>
+            <div class="service-body">
+              <h3>Facial Treatment</h3>
+              <p>Reveal your natural glow with our premium facial treatment.</p>
+              <button class="text-link" data-service="Facial Treatment">Learn More <i data-lucide="arrow-right"></i></button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-image">
+              <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=85" alt="Body scrub treatment" />
+            </div>
+            <div class="service-body">
+              <h3>Body Scrub</h3>
+              <p>Remove dead skin and leave your skin silky smooth and refreshed.</p>
+              <button class="text-link" data-service="Body Scrub">Learn More <i data-lucide="arrow-right"></i></button>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-action">
+          <button class="btn btn-outline" data-open-booking>View All Treatments <i data-lucide="arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-photo reveal">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=90" alt="Luxury tropical Bali spa villa" />
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">ABOUT BALI SERENITY SPA</p>
+          <h2>A Journey to Wellness<br />in the Island of Gods</h2>
+          <p class="about-lead">
+            Immerse yourself in a serene spa experience where traditional Balinese healing meets modern wellness.
+          </p>
+          <ul class="check-list">
+            <li><span><i data-lucide="check"></i></span> Authentic Balinese Treatments</li>
+            <li><span><i data-lucide="check"></i></span> Professional Therapists</li>
+            <li><span><i data-lucide="check"></i></span> Peaceful Tropical Ambiance</li>
+          </ul>
+          <button class="btn btn-dark" data-open-booking>Discover More <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <aside class="benefits-card reveal">
+          <h3>Our Benefits</h3>
+          <div class="benefit-item">
+            <span class="benefit-icon"><i data-lucide="leaf"></i></span>
+            <span>Natural &amp; Organic<br />Products</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon"><i data-lucide="flower-2"></i></span>
+            <span>Expert<br />Therapists</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon"><i data-lucide="heart"></i></span>
+            <span>Relaxing<br />Atmosphere</span>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon"><i data-lucide="shield-check"></i></span>
+            <span>Clean &amp; Safe<br />Environment</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">WHY CHOOSE US</p>
+          <h2>Your Perfect Spa Experience</h2>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <span class="why-icon"><i data-lucide="flower-2"></i></span>
+            <h3>Authentic Balinese<br />Tradition</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><i data-lucide="sparkles"></i></span>
+            <h3>Tranquil<br />Environment</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><i data-lucide="gem"></i></span>
+            <h3>Premium<br />Service</h3>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon"><i data-lucide="smile"></i></span>
+            <h3>Guest<br />Satisfaction</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section" id="testimonials">
+      <div class="testimonial-bg"></div>
+      <div class="container testimonial-content">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">WHAT OUR GUESTS SAY</p>
+          <h2>Trusted by Travelers</h2>
+        </div>
+
+        <div class="testimonial-slider reveal">
+          <button class="slider-btn prev" id="prevTestimonial" aria-label="Previous testimonial"><i data-lucide="arrow-left"></i></button>
+
+          <div class="testimonial-card">
+            <div class="quote-mark">“</div>
+            <p class="testimonial-text" id="testimonialText">
+              An amazing spa experience in Bali! The massage was superb, and the ambiance was so peaceful. Highly recommended!
+            </p>
+            <div class="testimonial-person">
+              <div class="avatar">SM</div>
+              <div>
+                <strong id="testimonialName">Sarah Mitchell</strong>
+                <span id="testimonialCountry">Australia</span>
+              </div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+
+          <button class="slider-btn next" id="nextTestimonial" aria-label="Next testimonial"><i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <section class="booking-cta">
+      <div class="container">
+        <div class="booking-cta-inner reveal">
+          <div>
+            <p class="cta-eyebrow">YOUR MOMENT OF SERENITY</p>
+            <h2>Ready to Relax?</h2>
+            <p>Book your spa session today and experience the best of Bali.</p>
+          </div>
+          <button class="btn btn-gold btn-large" data-open-booking>
+            Book Now
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow eyebrow-light">VISIT OUR SPA</p>
+          <h2>Find Your<br />Moment of Peace</h2>
+          <p>Step away from the everyday and discover a peaceful sanctuary in the heart of Seminyak.</p>
+
+          <div class="contact-details">
+            <div><i data-lucide="map-pin"></i><span>Jl. Sunset Road, Seminyak,<br />Bali 80361</span></div>
+            <div><i data-lucide="phone"></i><span>+62 361 123 4567</span></div>
+            <div><i data-lucide="mail"></i><span>hello@baliserenityspa.com</span></div>
+            <div><i data-lucide="clock-3"></i><span>Daily · 09:00 – 22:00</span></div>
+          </div>
+        </div>
+
+        <div class="map-card reveal">
+          <div class="map-pattern"></div>
+          <div class="map-pin"><i data-lucide="map-pin"></i></div>
+          <div class="map-label">
+            <strong>Bali Serenity Spa</strong>
+            <span>Seminyak, Bali</span>
+          </div>
+          <button class="btn btn-light" type="button" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Seminyak+Bali','_blank')">
+            Open in Google Maps <i data-lucide="external-link"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#home">
+          <span class="brand-mark"><i data-lucide="lotus"></i></span>
+          <span class="brand-text">
+            <strong>Bali Serenity</strong>
+            <small>SPA • BALI</small>
+          </span>
+        </a>
+        <p>Authentic Balinese wellness experiences designed to restore your body, mind, and soul.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <a href="tel:+623611234567"><i data-lucide="phone"></i> +62 361 123 4567</a>
+        <a href="mailto:hello@baliserenityspa.com"><i data-lucide="mail"></i> hello@baliserenityspa.com</a>
+        <span><i data-lucide="map-pin"></i> Seminyak, Bali, Indonesia</span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+          <a href="#" aria-label="TripAdvisor"><i data-lucide="globe"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Bali Serenity Spa. All rights reserved.</span>
+      <div><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms &amp; Conditions</a></div>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/6281234567890?text=Hello%20Bali%20Serenity%20Spa%2C%20I%20would%20like%20to%20book%20a%20treatment." target="_blank" rel="noopener" aria-label="Book through WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-booking></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <button class="modal-close" data-close-booking aria-label="Close"><i data-lucide="x"></i></button>
+      <div class="modal-head">
+        <p class="eyebrow">BOOK YOUR EXPERIENCE</p>
+        <h2 id="bookingTitle">Reserve Your Serenity</h2>
+        <p>Tell us your preferred treatment and we'll confirm your appointment via WhatsApp.</p>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-grid">
+          <label>Full Name<input name="name" required placeholder="Your name" /></label>
+          <label>WhatsApp Number<input name="phone" required placeholder="+62..." /></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" /></label>
+          <label>Treatment
+            <select name="treatment" id="treatmentSelect" required>
+              <option value="">Select treatment</option>
+              <option>Balinese Massage</option>
+              <option>Aromatherapy Massage</option>
+              <option>Facial Treatment</option>
+              <option>Body Scrub</option>
+              <option>Couple Massage</option>
+            </select>
+          </label>
+          <label>Date<input type="date" name="date" required /></label>
+          <label>Preferred Time<input type="time" name="time" min="09:00" max="21:00" required /></label>
+          <label>Guests<input type="number" name="guests" min="1" max="8" value="1" required /></label>
+          <label>Special Request<input name="request" placeholder="Optional" /></label>
+        </div>
+        <button class="btn btn-dark btn-submit" type="submit">
+          Confirm via WhatsApp <i data-lucide="arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
