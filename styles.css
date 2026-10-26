@@ -329,3 +329,8 @@ a { color: inherit; text-decoration: none; }
   .hero-meta { font-size:10px; }
   .why-grid { grid-template-columns:1fr 1fr; }
 }
+
+/* Hide the "Powered by Netlify" badge */
+#nl-badge-frame {
+  display: none !important;
+}
